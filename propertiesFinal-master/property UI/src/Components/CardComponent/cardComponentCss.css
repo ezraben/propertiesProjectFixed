@@ -1,0 +1,80 @@
+.card-img-top:hover {
+  cursor: pointer;
+}
+.card-body {
+  padding: 2rem;
+}
+.card-pointer:hover {
+  color: teal;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.cardColor {
+  color: rgb(68, 180, 255);
+}
+
+.form-check-input:hover {
+  cursor: pointer;
+  background-color: red;
+  padding-left: 10vw;
+}
+.card {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.propertyLikeMsg {
+  color: gold;
+}
+.btnCard {
+  display: flex;
+  justify-content: space-around;
+}
+.likeMsg {
+  margin-top: 5vh;
+}
+.likeMsg:hover {
+  color: red;
+}
+input + .likeMsg {
+  visibility: hidden;
+}
+input:hover + .likeMsg {
+  visibility: visible;
+}
+
+.starContainer {
+  position: relative;
+}
+
+.star {
+  visibility: hidden;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.star:hover {
+  cursor: pointer;
+  animation: rotate 0.5s;
+}
+.star:before {
+  content: "\2606";
+
+  top: 10px;
+  position: absolute;
+
+  visibility: visible;
+}
+.star:checked:before {
+  content: "\2600";
+  position: absolute;
+}
+@media screen and (max-width: 850px) {
+  input + .likeMsg {
+    visibility: visible;
+    color: teal;
+  }
+}
